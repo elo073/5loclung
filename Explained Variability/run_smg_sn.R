@@ -6,7 +6,8 @@ source("Barplot.LFLMM.R")
 
 
 # Log CPM matrix (gene x cell)
-load("smg_sn.Rbin")
+cpm=read.table("../Data/smg_sn.csv", header=T, sep=",")
+cpm <- data.frame(cpm[,-1], row.names = cpm[,1])
 
 ######select genes expressed in at least 5% of all cells
 check_genes = c("CCL28", "CCL20", "CCL2", "TNFSF13", "IL6", "HLA-DRA", "HLA-DRB1", "HLA-DRB5", "HLA-DPB1", "HLA-DQB1", "HLA-DPA1", "HLA-DMA", "HLA-DMB", "HLA-DQA1", "HLA-DPB1", "CD40", "PIGR")
@@ -22,7 +23,7 @@ for (i in check_genes){
 cpm_genes <-cpm[rownames(cpm) %in% check_genes, ]
 
 ###### meta data file
-mdata=read.table("Meta_smg_sn.csv",header=T, sep=",", row.names=1)
+mdata=read.table("../Data/Meta_smg_sn.csv",header=T, sep=",", row.names=1)
 
 # Logaritmize Total counts and Number of Genes
 mdata$Total.counts=log(mdata$Total.counts)
@@ -35,7 +36,7 @@ mdata$Location[mdata$Location == "c_Bronchi.4"] <- 3
 
 # fitting lmm
 res = LFLMM(cpm_filt, mdata)
-Barplot(res, "smg_sn_lin.png", "SMG Nuclei")
+Barplot(res, "../Plots/SMG_sn_lin.png", "SMG Nuclei")
 
 ###### LOCATION AS BINARY #######
 mdata$Location[mdata$Location == 2] <- 0
@@ -43,4 +44,4 @@ mdata$Location[mdata$Location == 3] <- 0
 
 # fitting lmm
 res = LFLMM(cpm_filt, mdata)
-Barplot(res, "smg_sn_bin.png", "SMG Nuclei")
+Barplot(res, "../Plots/SMG_sn_bin.png", "SMG Nuclei")
