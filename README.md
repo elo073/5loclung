@@ -11,7 +11,7 @@ First, clone the repository
 $ git clone https://github.com/elo073/5loclung.git
 ```
 
-Next, access the  data portal (<https://5locationslung.cellgeni.sanger.ac.uk/cellxgene.html>) and download the H5AD object under "All data". Save it on 5loclung/Data
+Next, access the  data portal (<https://5locationslung.cellgeni.sanger.ac.uk/cellxgene.html>) and download the H5AD object under "All data". Save it in 5loclung/Data
 
 Finaly, run the following commands:
 
@@ -20,13 +20,13 @@ Finaly, run the following commands:
 $ cd 5loclung/Explained\ Variability/ 
 
 # Write count matrices
-python convert_h5ad.py
-python convert_h5ad_smg.py
+$ python convert_h5ad.py
+$ python convert_h5ad_smg.py
 
 # Execute scripts for explained variability
-Rscript run.R
-Rscript run_smg_sc.R
-Rscript tun_smg_sn.R
+$ Rscript run.R
+$ Rscript run_smg_sc.R
+$ Rscript tun_smg_sn.R
 
 ```
 
