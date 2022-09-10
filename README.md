@@ -1,13 +1,20 @@
-# 5loclung
-Custom codes accompanying single cell spatial transcriptomic study on the healthy human lung
+# 5loclung (5 location lung study)
+
+
+Custom codes accompanying single cell spatial transcriptomic study on the healthy human lung.
 
 This repository contains custom codes used in the analysis of single cell, nuclei and spatial transcriptomics data from the healthy human lung.
 The pre-print is available here: https://www.biorxiv.org/content/10.1101/2021.11.26.470108v1
 
 
-Most of the codes used in manuscript are publicly available packages with specifications written in the methods.
+Most of the codes used in manuscript are publicly available packages with specifications written in the methods of the study.
 
-The code used for fGWAS and for cell type proportion analysis is available here: https://github.com/natsuhiko/PHM
+The code used for fGWAS plots and for cell type proportion analysis is available here: https://github.com/natsuhiko/PHM
+
+The code used for marker gene dot plots with mean group expressions, expression of TCR regions were previously published (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7611066/#, doi: 10.1126/science.aay3224) and the code available here: 10.5281/zenodo.3711134
+
+The code for explained variability code is explained below.
+
 
 
 
