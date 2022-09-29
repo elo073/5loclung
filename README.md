@@ -13,7 +13,13 @@ The code used for fGWAS plots and for cell type proportion analysis is available
 
 The code used for marker gene dot plots with mean group expressions and expression of TCR regions were previously published (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7611066/#, doi: 10.1126/science.aay3224) and the code available here: 10.5281/zenodo.3711134
 
-The code 
+
+
+The code for shared TCR clonotype analysis across donors and locations is in the tile TCR-clonotypes.ipynb.
+
+
+
+
 
 The code for explained variability code is explained below and in folders Data, Explained Variability and Plots.
 
