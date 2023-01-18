@@ -5,6 +5,7 @@ Custom codes accompanying single cell spatial transcriptomic study on the health
 
 This repository contains custom codes used in the analysis of single cell, nuclei and spatial transcriptomics data from the healthy human lung.
 The pre-print is available here: https://www.biorxiv.org/content/10.1101/2021.11.26.470108v1
+The peer-reviewed publication is available here: https://www.nature.com/articles/s41588-022-01243-4
 
 
 Most of the codes used in manuscript are publicly available packages with specifications written in the methods of the study.
