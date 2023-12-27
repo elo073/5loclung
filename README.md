@@ -23,6 +23,8 @@ Most of the codes used in manuscript are publicly available packages with specif
 
 - Code for shared TCR clonotype analysis across donors and locations is in the tile TCR-clonotypes.ipynb.
 
+- Code for Cell type composition analysis using linear mixed model (eg. Figure 1e) is available [here](https://github.com/Teichlab/sctkr/blob/2a024cafef1aae192bf9656349449c5a84d1c6ed/R/CellTypeCompositionAnalysis.R#L4)
+
 - Code for explained variability code is explained below and in folders Data, Explained Variability and Plots.
 
 ### Data Availability
